@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "pg": "^8.8.0",
+    "sequelize": "^6.24.0"
+  },
+  "name": "mascotasbackend",
+  "description": "Simple backend for study",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiplomadoSoftware/mascotasBackEnd.git"
+  },
+  "author": "petro coders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiplomadoSoftware/mascotasBackEnd/issues"
+  },
+  "homepage": "https://github.com/DiplomadoSoftware/mascotasBackEnd#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
