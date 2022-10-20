@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../Database/index.js";
 
-const petRequest = sequelize.define( 'solicitudes', {
+const PetRequest = sequelize.define( 'solicitudes', {
     id: {
         type: DataTypes.STRING,
         primaryKey: true,
@@ -21,11 +21,11 @@ const petRequest = sequelize.define( 'solicitudes', {
     estado: {
         type: DataTypes.STRING
     },
-    id_mascota: {
+    mascota_id: {
         type: DataTypes.INTEGER,
         references: 'mascotas',
         referencesKey: 'id'
     }
-});
+},{sequelize, timestamps: false});
 
-export { petRequest }
+export { PetRequest }

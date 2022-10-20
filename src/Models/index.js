@@ -1,2 +1,2 @@
-export pet from './pets';
-export petRequest from './petRequest';
+export * from './pets.js';
+export * from './petRequest.js';
