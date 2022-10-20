@@ -1,6 +1,6 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../Database/index.js";
-import { petRequest } from "./petRequest";
+import { PetRequest } from "./petRequest";
 
 const Pet = sequelize.define( 'mascotas', {
     id: {
