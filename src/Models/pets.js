@@ -1,6 +1,6 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../Database/index.js";
-import { PetRequest } from "./petRequest";
+import { PetRequest } from "./petRequest.js";
 
 const Pet = sequelize.define( 'mascotas', {
     id: {
@@ -23,8 +23,8 @@ const Pet = sequelize.define( 'mascotas', {
         type: DataTypes.STRING
     },
 
-});
+},{sequelize, timestamps: false});
 
-Pet.hasMany(petRequest);
+Pet.hasMany(PetRequest,  { foreignKey: 'mascota_id' });
 
 export { Pet }
